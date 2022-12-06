@@ -13,7 +13,7 @@ namespace Mod
     {
         private const string modGUID = "fly";
         private const string modName = "fly";
-        private const string modVersion = "0.5.6";
+        private const string modVersion = "0.2.9";
 
         public void Awake()
         {
