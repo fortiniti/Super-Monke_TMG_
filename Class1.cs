@@ -45,7 +45,7 @@ namespace Mod
 
                 if (grip)
                 {
-                    __instance.transform.position = __instance.transform.forward;
+                     __instance.headCollider.transform.position = __instance.headCollider.transform.forward;
                 }
          
             }
