@@ -45,7 +45,7 @@ namespace Mod
 
                 if (grip)
                 {
-                    __instance.gameObject.transform.position = __instance.transform.forward;
+                    __instance.transform = __instance.transform.forward;
                 }
          
             }
