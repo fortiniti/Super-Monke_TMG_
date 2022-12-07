@@ -43,9 +43,15 @@ namespace Mod
 
                 input.TryGetFeatureValue(CommonUsages.primaryButton, out grip);
 
-                if (grip)
+               if (grip)
                 {
-                     __instance.headCollider.transform.position = __instance.headCollider.transform.forward;
+                   __instance.gameObject.transform.position = Vector3.MoveTowards(__instance.gameObject.transform.position, __instance.gameObject.transform.position + __instance.headCollider.gameObject.transform.forward, 0.4f);
+                   __instance.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+                    return;
+                }
+                else
+                {
+                  __instance.gameObject.GetComponent<Rigidbody>().isKinematic = false;
                 }
          
             }
